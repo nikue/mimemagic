@@ -66,6 +66,7 @@ class MimeMagic
 
   def self.open_mime_database
     path = MimeMagic::DATABASE_PATH
+    path += "/freedesktop.org.xml"
     File.open(path)
   end
 
